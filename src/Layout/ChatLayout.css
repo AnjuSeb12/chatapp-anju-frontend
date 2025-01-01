@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.left-col
+{
+    width:80px;
+    background-color: #282727;
+}
+.right-col {
+    width: 100%; 
+    background-color: #282727;
+}
+.mid-col{
+   width: 30%;
+    background-color: #282727; 
+    overflow-y: auto; 
+    border-top: 1px solid rgb(65, 62, 62); 
+    border-right: 1px solid rgb(65, 62, 62); 
+    border-left: 1px solid rgb(65, 62, 62); 
+    
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+  
+   
+
+}

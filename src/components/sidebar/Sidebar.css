@@ -1,0 +1,40 @@
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+
+    
+.sidebar-wrapper > div {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px; 
+  }
+  .imgWrapper{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color:#e5e7eb;
+    margin-right: 0.75rem;
+ 
+
+
+  }
+  .imgSize{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+
+  }
+  
+  

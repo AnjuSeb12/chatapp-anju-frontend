@@ -1,0 +1,65 @@
+
+.settings-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(100%); 
+    opacity: 0; 
+    pointer-events: none; 
+  }
+  
+
+  .settings-overlay.open {
+    transform: translateY(0); 
+    opacity: 1;
+    pointer-events: auto; 
+  }
+  
+ 
+  .settings-container {
+    background: #fff;
+    border-radius: 8px 8px 0 0; 
+    width: 100%; 
+    max-width: 300px; 
+    padding: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .settings-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .settings-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .settings-item:hover {
+    background: #f0f0f0;
+  }
+  

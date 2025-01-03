@@ -87,6 +87,7 @@ import Validater from './components/Validater';
 
 // Protected Route Component
 const ProtectedRoute = ({ user, children }) => {
+  console.log("first",user)
   return user ? children : <Navigate to="/login" />;
 };
 
@@ -116,21 +117,14 @@ const App = () => {
   }, []);
 
   return (
-    <Routes>
+    <>
+      <Routes>
       {/* Public Routes */}
       <Route path="/signup" element={<UserRegister />} />
       <Route path="/login" element={<UserLogin />} />
-      <Route path="/" element={<ChatLayout />} />
+      <Route path="/" element={<ChatLayout />}/>
 
-      {/* Protected Routes */}
-      {/* <Route
-        path="/validator"
-        element={
-          <ProtectedRoute user={user}>
-            <Validater user={user} />
-          </ProtectedRoute>
-        }
-      /> */}
+      
       <Route
         path="/settings"
         element={
@@ -142,12 +136,14 @@ const App = () => {
       <Route
         path="/contact"
         element={
-          <ProtectedRoute user={user}>
+         
             <Contact />
-          </ProtectedRoute>
+          
         }
       />
     </Routes>
+    </>
+  
   );
 };
 

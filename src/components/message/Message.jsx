@@ -9,7 +9,7 @@ const [messageDisplay,setMessageDisplay]=useState([]);
 useEffect(()=>{
   const fetchMessage=async ()=>{
     try {
-      const message=await axios.get("http://localhost:5000/api/v1/message/getmessage",{
+      const message=await axios.get(`http://localhost:5000/api/v1/message/getmessage/${conversationId}`,{
         
           withCredentials:true,
       })
